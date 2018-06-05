@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "build": "npm run build:a && npm run build:b",
+    "build:a": "webpack --config webpack.config.A.js --progress",
+    "build:b": "webpack --config webpack.config.B.js --progress"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.11",
+    "mini-css-extract-plugin": "^0.4.0",
+    "optimize-css-assets-webpack-plugin": "^4.0.2",
+    "postcss-loader": "^2.1.5",
+    "prettier": "^1.13.4",
+    "uglifyjs-webpack-plugin": "^1.2.5",
+    "webpack": "^4.10.2",
+    "webpack-cli": "^3.0.2"
+  }
+}
